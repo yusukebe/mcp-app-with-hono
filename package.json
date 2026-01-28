@@ -1,0 +1,22 @@
+{
+  "name": "my-mcp-app",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "vite build",
+    "preview": "$npm_execpath run build && vite preview",
+    "deploy": "$npm_execpath run build && wrangler deploy --minify",
+    "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "dependencies": {
+    "@cfworker/json-schema": "^4.1.1",
+    "@modelcontextprotocol/ext-apps": "^1.0.1",
+    "@modelcontextprotocol/server": "https://pkg.pr.new/modelcontextprotocol/typescript-sdk/@modelcontextprotocol/server@00249ce",
+    "hono": "^4.11.7"
+  },
+  "devDependencies": {
+    "vite": "^7.3.1",
+    "vite-plugin-singlefile": "^2.3.0",
+    "wrangler": "^4.61.0"
+  }
+}
