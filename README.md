@@ -11,20 +11,20 @@ The official examples use Express, but this project demonstrates how to build MC
 ## Setup
 
 ```bash
-bun install
+npm install
 ```
 
 ## Development
 
 ```bash
-bun run build  # Build the UI
-bun run dev    # Start the Worker with Wrangler
+npm run build  # Build the UI
+npm run dev    # Start the Worker with Wrangler
 ```
 
 ## Deploy
 
 ```bash
-bun run deploy  # Includes build
+npm run deploy  # Includes build
 ```
 
 ## Files
